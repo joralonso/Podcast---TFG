@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="6dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/timeline_cover"
+        android:layout_below="@+id/timeline_usuario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/timeline_titulo"
+        android:layout_alignTop="@+id/timeline_cover"
+        android:layout_toRightOf="@+id/timeline_cover"
+        android:layout_toEndOf="@+id/timeline_cover"
+        android:layout_marginLeft="6dp"
+        android:layout_above="@+id/timeline_subtitulo" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/timeline_subtitulo"
+        android:layout_alignBottom="@+id/timeline_cover"
+        android:layout_alignLeft="@+id/timeline_titulo"
+        android:layout_alignStart="@+id/timeline_titulo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/timeline_extra"
+        android:layout_alignRight="@+id/timeline_titulo"
+        android:layout_alignEnd="@+id/timeline_titulo"
+        android:layout_below="@+id/timeline_titulo"
+        android:layout_toRightOf="@+id/timeline_subtitulo"
+        android:layout_toEndOf="@+id/timeline_subtitulo"
+        android:gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/timeline_usuario"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp" />
+
+</RelativeLayout>

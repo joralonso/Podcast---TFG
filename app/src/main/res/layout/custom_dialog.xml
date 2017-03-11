@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    tools:context=".MainActivity"
+    android:minWidth="400dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="#FFFFFF">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Programa 1"
+                android:id="@+id/dialogo_titulo"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/primary_text_default_material_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/dialogo_fecha"
+                android:textColor="@color/secondary_text_default_material_light"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Descripcion del podcast y blablablablabla"
+                android:id="@+id/dialogo_subtitulo"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/secondary_text_default_material_light" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary">
+
+
+        <Button
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reproducir"
+            android:drawableTop="@drawable/ic_play"
+            android:id="@+id/dialogo_play"
+            android:padding="16dp" />
+
+        <Button
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogo_download"
+            android:drawableTop="@drawable/ic_download"
+            android:text="@string/descargar"
+            android:tint="#FFFFFF"
+            android:drawableTintMode="src_over"
+            android:contextClickable="true"
+            android:padding="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

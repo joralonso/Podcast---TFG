@@ -1,0 +1,48 @@
+<resources>>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+    <style name="Notification" parent="@android:style/TextAppearance.Material.Notification">
+
+    </style>
+
+    <!-- Notification bar event text -->
+    <style name="NotificationTitle" parent="@android:style/TextAppearance.Material.Notification.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <!-- Notification bar event text -->
+    <style name="NotificationText" parent="@android:style/TextAppearance.Material.Notification.Line2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <!-- Notification bar event text -->
+    <style name="NotificationImage">
+        <item name="android:tint">#5d5d5d</item>
+        <item name="android:layout_width">@dimen/notification_action_width</item>
+        <item name="android:layout_height">@dimen/notification_action_height</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/notification_action_padding</item>
+    </style>
+</resources>

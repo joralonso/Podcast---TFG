@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Podcast</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_programa">ProgramaActivity</string>
+
+    <string name="reproductor_notification_title_template">Reproductor: %1$s</string>
+
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+
+    <string name="descarga_notification_title_template">Descarga: %1$s</string>
+
+    <string name="title_activity_principal">PrincipalActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="prompt_password_2">Repetir Contraseña</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_pasword_not_equals">Las contraseñas deben de ser iguales</string>
+    <string name="title_activity_usuario">UsuarioActivity</string>
+
+
+    <string-array name="tab_main">
+        <item>Subscripciones</item>
+        <item>Últimos Capítulos</item>
+        <item>Descargas</item>
+        <item>Timeline</item>
+        <item>Radios</item>
+    </string-array>
+
+    <string-array name="tab_usuario">
+        <item>Subscripciones</item>
+        <item>Capítulos Escuchados</item>
+        <item>Seguidores</item>
+        <item>Seguidos</item>
+    </string-array>
+
+    <string-array name="tab_programas">
+        <item>Últimos Capítulos</item>
+        <item>Más Escuchados</item>
+        <item>Relacionados</item>
+        <item>Subscriptores</item>
+    </string-array>
+
+    <string-array name="busqueda">
+        <item>Programas</item>
+        <item>Capítulos</item>
+        <item>Usuarios</item>
+        <item>Radios</item>
+    </string-array>
+
+
+    <string name="sin_internet">No hay conexión a internet</string>
+
+    <!-- MENU -->
+    <string name="menu_buscar">Buscar</string>
+    <string name="menu_miperfil">Mi Perfil</string>
+    <string name="menu_podcast">Añadir Podcast</string>
+    <string name="menu_cerrarsesion">Cerrar Sesión</string>
+    <string name="menu_opciones">Opciones</string>
+
+
+    <!-- HACE -->
+
+    <string name="hace_minuto">Hace %d minuto</string>
+    <string name="hace_minutos">Hace %d minutos</string>
+    <string name="hace_hora">Hace %d hora</string>
+    <string name="hace_horas">Hace %d horas</string>
+    <string name="hace_dia">Hace %d día</string>
+    <string name="hace_dias">Hace %d días</string>
+    <string name="hace_mes">Hace %d mes</string>
+    <string name="hace_meses">Hace %d meses</string>
+
+
+    <string name="duracion">Duración: %d min.</string>
+    <string name="reproducir">Reproducir</string>
+    <string name="descargar">Descargar</string>
+
+    <string name="aviso_nosubscripciones">No tienes subscripciones</string>
+    <string name="aviso_nosubscripciones_text">No te has subscrito a ningún programa. Para subscribirte accede a un programa y pulsa en la estrella</string>
+
+    <string name="aviso_nosubscriptores">No  sigues a nadie</string>
+    <string name="aviso_nosubscriptores_text">No sigues a ningún usuario. Para seguir a alguien, accede al perfil de un usuario y pulsa en la estrella</string>
+
+
+    <!-- PREFERENCIAS -->
+    <string name="pref_wifi_title">Reproducir solo con Wifi</string>
+    <string name="pref_wifi_text">Para ahorrar datos, solo reproducirá podcast no decargados y radios de internet solo cuando este conectado a una red wifi</string>
+
+    <string-array name="pref_position_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+    </string-array>
+    <string name="pref_position_title">Sección Inicial</string>
+    <string name="pref_position_text">Permite seleccionar la sección por defecto que se mostrará al abrir la aplicación</string>
+
+
+    <string name="pref_private_title">Cuenta privada</string>
+    <string name="pref_private_text">Nadie podrá ver tus subscripciones ni lo que escuchas</string>
+
+
+    <string name="pref_reproductor_externo_title">Reproductor externo</string>
+    <string name="pref_reproductor_externo_text">Usarás una app externa para abrir los audios</string>
+
+
+    <string name="pref_borrar_descargas_title">Borrar decargas</string>
+    <string name="pref_borrar_descargas_text">Borrar todas las decargas del dispositivo</string>
+
+    <string name="pref_actualizar_datos_title">Actualizar datos</string>
+    <string name="pref_actualizar_datos_text">Cambia tu nombre de usuario, tu correo o tu contraseña</string>
+
+
+
+    <string name="borrar_capitulo">¿Desea borrar el capítulo de su móvil?</string>
+
+
+    <string name="nointernet">No hay conexión a internet</string>
+    <string name="nowifi">No estás conectado a una red Wifi</string>
+    <string name="abriropciones">Ver Opciones</string>
+
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="usar_sin_registrarse">Usar sin registrarse</string>
+
+    <string name="tienes_cuenta">¿Tienes cuenta?</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta?</string>
+
+
+    <string name="necesitas_internet_title">Necesitas conexión a internet</string>
+    <string name="necesitas_internet_text">Para realizar esto necesitas estar conectado a internet</string>
+
+    <string name="error_iniciar_title">Error al iniciar</string>
+    <string name="error_iniciar_text">Se ha producido un error. Vuelve a probar de nuevo</string>
+
+    <!-- ERRORES -->
+
+    <string name="error_registrar_campos">Debes introducir un nombre, un correo y una contraseña</string>
+    <string name="error_regisrtar_contraseñas">Las contraseñas no coinciden</string>
+
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="add_programa">Añadir Podcast</string>
+    <string name="add_programa_button">Añadir</string>
+    <string name="add_programa_text">Si quieres añadir un podcast que no esté en la base de datos, pega aquí la URL del RSS del Podcast</string>
+    <string name="add_programa_error">No se ha podido añadir el podcast</string>
+
+    <string name="update_usuario">Actualizar Datos</string>
+
+</resources>

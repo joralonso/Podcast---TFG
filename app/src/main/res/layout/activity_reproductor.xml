@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/reproductor_fondo"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="NADIE SABE NADA"
+            android:id="@+id/reproductor_titulo"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_margin="3dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reproductor_imagen"
+            android:elevation="6dp"
+            android:layout_weight="1"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cómo es que Tarzán nunca tiene barba?"
+            android:id="@+id/reproductor_subtitulo"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="3dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reproductor_seek" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal">
+
+
+            <ImageView
+                style="@style/ButtonPlayer2"
+                android:id="@+id/reproductor_nosound"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_volume_off"
+                android:tint="#FFFFFF"
+                android:layout_weight="1" />
+
+            <ImageView
+                style="@style/ButtonPlayer2"
+                android:id="@+id/reproductor_replay"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_replay_30"
+                android:tint="#FFFFFF"
+                android:layout_weight="1" />
+
+            <ImageView
+                style="@style/ButtonPlayer2"
+                android:layout_height="65dp"
+                android:layout_width="65dp"
+                android:id="@+id/reproductor_play"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_player_background"
+                android:src="@drawable/ic_play"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:tint="#FFFFFF"
+                android:cropToPadding="false"
+                android:layout_gravity="center_vertical" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reproductor_progress"
+                android:visibility="gone" />
+
+            <ImageView
+                style="@style/ButtonPlayer2"
+                android:id="@+id/reproductor_forward"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_forward_30"
+                android:layout_gravity="right"
+                android:tint="#FFFFFF"
+                android:layout_weight="1" />
+
+            <ImageView
+                style="@style/ButtonPlayer2"
+                android:id="@+id/reproductor_stop"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_stop"
+                android:layout_gravity="right"
+                android:tint="#FFFFFF" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

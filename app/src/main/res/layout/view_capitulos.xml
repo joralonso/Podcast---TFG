@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/capituloTitle" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="10/10/2010"
+        android:id="@+id/capituloExtra"
+        android:layout_below="@+id/capituloTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/capituloExtra2"
+        android:gravity="right"
+        android:layout_alignRight="@+id/capituloTitle"
+        android:layout_alignEnd="@+id/capituloTitle"
+        android:layout_alignTop="@+id/capituloExtra"
+        android:layout_toRightOf="@+id/capituloExtra"
+        android:layout_toEndOf="@+id/capituloExtra" />
+
+</RelativeLayout>

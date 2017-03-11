@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ProgramaTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Dialogo" parent="@android:style/Theme.Dialog"></style>
+
+
+    <style name="AnimacionDialogo" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimacionDialogoFromBottom</item>
+
+
+        <!-- Fill the screen -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- Just to prove it's working -->
+        <item name="android:background">#ff0000</item>
+    </style>
+
+
+    <style name="AnimacionDialogoFromBottom">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/AnimacionDialogoFromBottom</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/button_login</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+
+    <style name="TextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#fff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="colorAccent">#fff</item>
+        <item name="colorControlNormal">#fff</item>
+        <item name="colorControlActivated">#fff</item>
+    </style>
+
+    <style name="TextInputLayoutUpdate" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="colorAccent">#000</item>
+        <item name="colorControlNormal">#000</item>
+        <item name="colorControlActivated">#000</item>
+    </style>
+
+    <style name="ButtonPlayer">
+        <item name="android:hint">#FFFFFF</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="ButtonPlayer2" parent="ButtonPlayer">
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+
+    </style>
+
+    <style name="TabLayout_Theme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="Notification" >
+        <item name="android:background">#3c3c3c</item>
+    </style>
+
+    <!-- Notification bar event text -->
+    <style name="NotificationTitle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:color">#ffffff</item>
+    </style>
+
+    <!-- Notification bar event text -->
+    <style name="NotificationText" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:color">#ffffff</item>
+    </style>
+
+    <!-- Notification bar event text -->
+    <style name="NotificationImage">
+        <item name="android:tint">#d2fffcfc</item>
+        <item name="android:layout_width">@dimen/notification_action_width</item>
+        <item name="android:layout_height">@dimen/notification_action_height</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/notification_action_padding</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+
+
+
+</resources>

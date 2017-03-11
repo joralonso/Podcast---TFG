@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.usal.podcast">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTION_HEADSET_PLUG" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProgramaActivity"
+            android:theme="@style/ProgramaTheme" />
+        <activity
+            android:name=".reproductor.ReproductorActivity"
+            android:launchMode="singleInstance"
+            android:noHistory="true" />
+        <activity
+            android:name=".reproductor.ReproductorRadioActivity"
+            android:launchMode="singleInstance"
+            android:noHistory="true" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".reproductor.ReproductorService" />
+
+        <activity
+            android:name=".UsuarioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".IniciarActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".AddPodcastActivity" />
+        <activity android:name=".UpdateUsuario"></activity>
+    </application>
+
+</manifest>
